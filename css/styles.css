@@ -133,6 +133,29 @@ ul {
 .list {
   width: 270px;
 }
+.list::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.list:nth-child(1)::before {
+  background-image: url(../imj-png/antenna\ 1.png);
+}
+.list:nth-child(2)::before {
+  background-image: url(../imj-png/clock\ 1.png);
+}
+.list:nth-child(3)::before {
+  background-image: url(../imj-png/diagram\ 1.png);
+}
+.list:nth-child(4)::before {
+  background-image: url(../imj-png/astronaut\ 1.png);
+}
 .img {
   width: 370px;
 }
