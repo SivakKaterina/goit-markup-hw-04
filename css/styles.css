@@ -160,32 +160,36 @@ ul {
 .list-container {
   display: inline-block;
   display: flex;
-  justify-content: space-between;
   margin-top: 0px;
   margin-left: 0px;
   margin-bottom: 0px;
   padding: 0px;
 }
 .list {
-  width: 270px;
-}
-.list::before {
   display: block;
-  content: "";
+  width: 270px;
+  margin-bottom: 30px;
+}
+.block-svg-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   height: 120px;
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
   margin-bottom: 30px;
 }
 .list-svg-icon {
+  display: block;
+
   background-color: #f5f4fa;
   border-radius: 4px;
 }
 .img {
   width: 370px;
 }
-.img:not(:last-child) {
+.list:not(:last-child) {
   margin-right: 30px;
 }
 .our-team-list {
