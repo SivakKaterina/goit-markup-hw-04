@@ -140,8 +140,7 @@ ul {
 .list-nav .item:not(:last-child) {
   margin-right: 50px;
 }
-/* .list-nav.item:last-child {
-  margin-right: 0px; */
+/* ul */
 .address-header {
   display: flex;
   margin-top: 0px;
@@ -233,19 +232,39 @@ ul {
 .excretion:focus {
   color: #2196f3;
 }
+/* a */
 .adress-excretion {
-  display: block;
-
+  display: flex;
+  align-items: center;
   color: #757575;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.icon-envelope-hover {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
 .adress-excretion:hover,
 .adress-excretion:focus {
   color: #2196f3;
 }
+.adress-excretion:hover .icon-envelope-hover,
+.adress-excretion:focus .icon-envelope-hover {
+  fill: #2196f3;
+}
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+.adress-excretion:hover .icon-smartphone,
+.adress-excretion:focus .icon-smartphone {
+  fill: #2196f3;
+}
+
 .adress-footerone {
   display: inline-block;
   color: #ffffff;
@@ -503,7 +522,6 @@ a.font-style {
 /* ul */
 .social-links-list {
   display: flex;
-  justify-content: space-between;
   margin: 0px 32px 30px 32px;
   padding: 0px;
 }
@@ -513,6 +531,8 @@ a.font-style {
 /* a */
 .social-icons-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   background-color: #fff;
@@ -534,12 +554,13 @@ a.font-style {
 }
 
 /* footer */
-
+/* ul */
 .offers-list {
   display: flex;
   margin: 0px;
   padding: 0;
 }
+/* a */
 .footer-icons-link {
   display: flex;
   justify-content: center;
@@ -549,6 +570,7 @@ a.font-style {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
+/* svg */
 .footer-svg {
   width: 20px;
   height: 20px;
@@ -559,21 +581,4 @@ a.font-style {
 }
 .social-footer-links:not(:last-child) {
   margin-right: 10px;
-}
-
-/* иконки хедер */
-.item-address {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-left: 16px;
-}
-.item-address::before {
-  display: flex;
-  content: "";
-  width: 16px;
-  height: 16px;
-  background-image: url(../imj-png/envelope.png);
-  background-repeat: no-repeat;
-  background-position: center;
 }
