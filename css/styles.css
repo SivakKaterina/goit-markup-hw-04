@@ -511,32 +511,36 @@ a.font-style {
 /* Social links */
 .social-links-list {
   display: flex;
-  width: 44px;
-  height: 44px;
+  justify-content: space-between;
+  margin: 0px 32px 30px 32px;
   padding: 0px;
 }
-/*.social-links {
-  /* background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-} */
-.social-link {
-}
-/* .social-links:nth-child(1) {
-  background-image: url(../imj-png/Ellipse1.png);
-}
-.social-links:nth-child(2) {
-  background-image: url(../imj-png/Ellipse2.png);
-}
-.social-links:nth-child(3) {
-  background-image: url(../imj-png/Ellipse3.png);
-}
-.social-links:nth-child(4) {
-  background-image: url(../imj-png/Ellipse4.png);
-}
-.social-links:not(:last-child) {
+.social-links-list:not(:last-child) {
   margin-right: 10px;
-} */
+}
+.social-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.our-team-svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+.social-icons-link:hover {
+  background-color: #2196f3;
+}
+
+.social-icons-link:hover .our-team-svg,
+.social-icons-link:focus .our-team-svg {
+  fill: #fff;
+}
+
 /* footer */
 
 .offers-list {
@@ -544,30 +548,22 @@ a.font-style {
   margin: 0;
   padding: 0;
 }
-.social-footer-links {
+.footer-icons-link {
   display: flex;
-  content: "";
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
 }
-.social-footer-links:not(:last-child) {
-  margin-right: 10px;
+.footer-svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
 }
-.social-footer-links:nth-child(1) {
-  background-image: url(../imj-png/instagram\ 2.png);
-}
-.social-footer-links:nth-child(2) {
-  background-image: url(../imj-png/twitter\ 1.png);
-}
-.social-footer-links:nth-child(3) {
-  background-image: url(../imj-png/facebook\ 1.png);
-}
-.social-footer-links:nth-child(4) {
-  background-image: url(../imj-png/linkedin\ 1.png);
+.footer-icons-link:hover {
+  background-color: #2196f3;
 }
 /* иконки хедер */
 .item-address {
