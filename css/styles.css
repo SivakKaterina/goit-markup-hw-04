@@ -243,8 +243,6 @@ ul {
   letter-spacing: 0.02em;
 }
 .icon-envelope-hover {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
 }
 .adress-excretion:hover,
@@ -506,8 +504,6 @@ a.font-style {
 }
 /* svg */
 .svg-logo {
-  width: 44.27px;
-  height: 49.23px;
   fill: #afb1b8;
 }
 .link-befor:hover {
@@ -522,6 +518,8 @@ a.font-style {
 /* ul */
 .social-links-list {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0px 32px 30px 32px;
   padding: 0px;
 }
